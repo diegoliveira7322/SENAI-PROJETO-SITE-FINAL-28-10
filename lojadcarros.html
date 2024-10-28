@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DG CARS</title>
+    
+    <link rel="shortcut icon" href="dg logo.png" type="image/x-icon">
+   
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf7f7;
+            color: #000000;
+        }
+
+        header {
+            background-color: #000000;
+            color: #dcd6d6;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: url('car-background.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .product {
+            width: calc(33.333% - 20px);
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background: #0a0a0a;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h2 {
+            margin: 0 0 10px;
+            color: #ffffff;
+        }
+
+        .product-info p {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #050505;
+            color: #dedede;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: #dedede;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #ffcc00; /* Cor ao passar o mouse */
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: 100%;
+            }
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            width: calc(33.333% - 10px);
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            opacity: 0.6; /* Opacidade padrão */
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover img {
+            opacity: 1; /* Opacidade ao passar o mouse */
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="dg logo.png" alt="Logo" style="max-width: 100px;">
+        <nav>
+            <ul>
+                <li><a href="lojadcarros.html">Home</a></li>
+                <li><a href="carrinhoreal.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cadastro.html">Login</a></li>
+                <li><a href="cadastrastro2.html">Cadastro</a></li>
+                <li><a href="Carrinho.html">Peças Automotivas</a></li>
+                <li><a href="carrinhoreal.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<div class="hero"></div>
+
+    <div class="container">
+        <section class="products">
+            <div class="product">
+                <img src="ford-maverick.jpg" alt="Ford Maverick">
+                <div class="product-info">
+                    <h2>Ford Maverick</h2>
+                    <p>Ford Maverick gt-coupe-v8-16v-gasolina-2p-manual</p>
+                    <p>R$ 203.000</p>
+                    <a href="compra.html">Ver Mais</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="ford-mustang-5.4-shelby-gt-500.jpg" alt="Mustang Shelby">
+                <div class="product-info">
+                    <h2>Mustang Shelby GT 500</h2>
+                    <p>5.4 SHELBY GT 500 COUPÉ V8 32V GASOLINA 2P MANUAL.</p>
+                    <p>R$ 549.000</p>
+                    <a href="compra2.html">Ver Mais</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="civic.jpg" alt="Civic 1998">
+                <div class="product-info">
+                    <h2>Civic 1998</h2>
+                    <p>Civic 98 original</p>
+                    <p>R$ 20.000</p>
+                    <a href="compra3.html">Ver Mais</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="audi r8.jfif" alt="Audi R8">
+                <div class="product-info">
+                    <h2>AUDI R8</h2>
+                    <p>AUDI R8 V10 2015</p>
+                    <p>R$ 859.000</p>
+                    <a href="compra4.html">Ver Mais</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="auditt.jpg" alt="AUDI TT">
+                <div class="product-info">
+                    <h2>Audi TT</h2>
+                    <p>AUDI TT V8 2015</p>
+                    <p>R$ 560.000</p>
+                    <a href="compra5.html">Ver Mais</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="32oi.jpg" alt="Gol 2012">
+                <div class="product-info">
+                    <h2>BMW 320 I</h2>
+                    <p>2.0 16V TURBO GASOLINA M SPORT AUTOMÁTICO</p>
+                    <p>R$ 230.000</p>
+                    <a href="compra6.html">Ver Mais</a>
+                </div>
+        
+            </div>
+        </section>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="hq720.jpg" alt="Imagem 1">
+            </div>
+            <div class="gallery-item">
+                <img src="transferir (5).jfif" alt="Imagem 2">
+            </div>
+            <div class="gallery-item">
+                <img src="transferir (4).jfif" alt="Imagem 3">
+            </div>
+            <div class="gallery-item">
+                <img src="transferir (3).jfif" alt="Imagem 4">
+            </div>
+            <div class="gallery-item">
+                <img src="transferir (1).jfif" alt="Imagem 5">
+            </div>
+            <div class="gallery-item">
+                <img src="transferir.jfif" alt="Imagem 6">
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="carros2.jfif" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="carros3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="carros populares.jfif" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    </footer>
+</body>
+
+</html>
